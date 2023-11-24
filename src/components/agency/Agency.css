@@ -1,0 +1,209 @@
+/* 헤더 */
+header {
+  border-bottom: red solid 2px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+header .logo {
+  color: inherit;
+  text-decoration: none;
+  background-color: #ddd;
+  display: block;
+  width: 50px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  font-size: .8rem;
+  margin: 10px;
+}
+
+header .hamburger {
+  width: 25px;
+  height: 15px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+header .bar {
+  width: 25px;
+  background-color: #000;
+  height: 2px;
+  position: absolute;
+  right: 0;
+  transition: 0.5s;
+}
+
+header .bar2 {
+  width: 17px;
+  top: 7px;
+}
+
+header .bar3 {
+  width: 10px;
+  height: 1px;
+  bottom: 0;
+}
+
+header .close1 {
+  background-color: #fff;
+  transform: rotate(45deg);
+  top: 10px;
+}
+
+header .close2 {
+  background-color: #fff;
+  transform: rotate(-45deg);
+  top: 10px;
+}
+
+header h3 {
+  margin: 0;
+}
+
+header .globalMenu {
+  position: absolute;
+  list-style: none;
+  background-color: #000;
+  color: #fff;
+  height: 400px;
+  width: 250px;
+  top: -10px;
+  right: 2px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 50px;
+  text-align: center;
+  z-index: 3;
+  transition: 0.5s;
+}
+
+header .menuClose {
+  position: absolute;
+  transform: translateX(500px);
+  transition: 1s;
+}
+
+header .globalMenu li {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+/* Main */
+section {
+  padding: 50px;
+}
+
+section h1 {
+  font-size: 4rem;
+  line-height: 1;
+  letter-spacing: -1px;
+  margin: 50px 0 20px;
+}
+
+section p {
+  font-weight: 500;
+  letter-spacing: -1px;
+  font-size: .9rem;
+}
+
+/* Mac */
+.mac .yellowBox {
+  width: 80%;
+  height: 240px;
+  background: linear-gradient(#f8e42f, #f7a711);
+  border-radius: 20px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.mac img {
+  position: absolute;
+  width: 75%;
+}
+
+.mac .hand {
+  z-index: 3;
+  bottom: -30px;
+  left: 40px;
+}
+
+.mac .color {
+  z-index: 1;
+  top: 10px;
+  left: 40px;
+}
+
+.mac p {
+  text-align: center;
+  font-weight: 700;
+  font-size: .8rem;
+  letter-spacing: -0.5px;
+  margin: 100px auto;
+}
+
+/* SwiperImg */
+.swiperBox .swiper {
+  width: 80%;
+  height: 250px;
+}
+
+.swiperBox .swiper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.swiperBox .swiper-button-prev,
+.swiperBox .swiper-button-next {
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transform: translateY(50%);
+
+  &::after {
+    font-size: .9rem;
+    color: #000;
+    font-weight: 800;
+  }
+}
+
+.swiperBox .swiper-button-prev {
+  &::after {
+    content: "←";
+  }
+}
+
+.swiperBox .swiper-button-next {
+  &::after {
+    content: "→";
+  }
+}
+
+.swiperBox p {
+  text-align: center;
+  margin: 10px 0;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  font-size: .8rem;
+}
+
+/* footer */
+footer .footer {
+  text-align: center;
+  font-size: .8rem;
+  color: #999999;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 100px auto;
+}
